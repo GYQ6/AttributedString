@@ -40,6 +40,11 @@ extension ASAttributedString {
 
 extension ASAttributedString.Attribute {
     
+    /// 给富文本添加标识符
+    public static func identifier(_ value: String) -> Self {
+        return .init(attributes: [.identifier: value])
+    }
+    
     public static func font(_ value: Font) -> Self {
         return .init(attributes: [.font: value])
     }
