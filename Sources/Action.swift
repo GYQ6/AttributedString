@@ -265,6 +265,8 @@ extension NSAttributedString {
 extension NSAttributedString.Key {
     
     static let action = NSAttributedString.Key("com.attributed.string.action")
+    /// 自建参数 可点击富文本添加 标识符
+    public static let identifier = NSAttributedString.Key("ytvip.attributed.identifier")
 }
 
 #endif
